@@ -299,3 +299,21 @@
     }
 
 }
+
+.footer{
+    .phone{
+        use{
+            stroke:var(--global--color-primary);
+        }
+    }
+    .clock{
+        use{
+            stroke:var(--global--color-primary);
+        }
+    }    
+    .pointer{
+        use{
+            fill:var(--global--color-primary);
+        }
+    }    
+}

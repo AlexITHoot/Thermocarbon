@@ -11048,6 +11048,13 @@ ul.dropdown-menu > li.has-dropdown > a:before {
             color: var(--global--color-white);
             transition: 0.3s ease-in-out; }
 
+.footer .phone use {
+  stroke: var(--global--color-primary); }
+.footer .clock use {
+  stroke: var(--global--color-primary); }
+.footer .pointer use {
+  fill: var(--global--color-primary); }
+
 .module-contact {
   margin-left: 0; }
 
@@ -11068,7 +11075,7 @@ footer .content-block .footer-widget-content {
 footer .content-block .footer-widget-content a {
   color: #9b9b9b; }
 
-footer .content-block .footer-widget-content img {
+footer .content-block .footer-widget-content svg {
   margin-right: 19px; }
 
 footer .content-block.content-headquarters .footer-widget-content {
