@@ -11122,6 +11122,34 @@ footer .content-block.content-headquarters .footer-widget-content {
 .blades-img3 {
   margin-left: -100px; }
 
+.about-img {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr; }
+  .about-img .rete {
+    width: 100%;
+    grid-column: 1/-1;
+    grid-row: 1/2; }
+  .about-img .img-outer {
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2; }
+  .about-img:after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1px;
+    height: 1px;
+    border-radius: 50%;
+    background: var(--global--color-primary);
+    content: '';
+    box-shadow: 0 0 500px 200px var(--global--color-primary); }
+
 .color-piker {
   background: #fff;
   padding: 5px 30px;
