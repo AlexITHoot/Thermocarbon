@@ -22,7 +22,6 @@
     -->
     <link href="assets/css/vendor.min.css" rel="stylesheet"/>
     <link href="assets/css/style.css" rel="stylesheet"/>
-    <link href="assets/css/custom.css" rel="stylesheet"/>
 
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   </head>
@@ -182,53 +181,134 @@
           <h1 class="text-center">TCAR Part Number</h1>
           <div class="part-number-selector-form">
             <div class="part-number-selector-form-top">
-              <div class="mb-3">
-                <label for="" class="d-flex">Enim congue auctor vel eget ultricies.</label>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                  <label class="form-check-label" for="flexRadioDefault1">
-                    Mils
-                  </label>
+              <div class="row">
+                <div class="col-12 col-lg-7">
+                  <div class="row">
+                    <div class="col-12">
+                      <label class="form-label">Enim congue auctor vel eget ultricies.</label>
+                      <div class="custom-radio-group" id="custom-radio-group">
+                        <div class="custom-control">
+                          <input class="custom-control-input" type="radio" id="customRadioInline1" name="customRadioInline1">
+                          <label for="customRadioInline1">Mils</label>
+                        </div>
+                        <div class="custom-control">
+                          <input class="custom-control-input" type="radio" id="customRadioInline2" name="customRadioInline1">
+                          <label for="customRadioInline2">Inches</label>
+                        </div>
+                        <div class="custom-control">
+                          <input class="custom-control-input" type="radio" id="customRadioInline3" name="customRadioInline1">
+                          <label for="customRadioInline3">Metric</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <label class="form-label">Fermentum accumsan enim.</label>
+                      <div class="custom-checkbox-group" id="custom-radio-group">
+                        <div class="custom-control">
+                          <input class="custom-control-input" type="checkbox" id="customCheckInline1" name="customCheckInline1">
+                          <label for="customCheckInline1">Slot/slit</label>
+                        </div>
+                        <div class="custom-control">
+                          <input class="custom-control-input" type="checkbox" id="customCheckInline2" name="customCheckInline2">
+                          <label for="customCheckInline2">Notched</label>
+                        </div>
+                        <div class="custom-control">
+                          <input class="custom-control-input" type="checkbox" id="customCheckInline3" name="customCheckInline3">
+                          <label for="customCheckInline3">Angled</label>
+                        </div>
+                        <div class="custom-control">
+                          <input class="custom-control-input" type="checkbox" id="customCheckInline2" name="customCheckInline2">
+                          <label for="customCheckInline2">Trued</label>
+                        </div>
+                        <div class="custom-control">
+                          <input class="custom-control-input" type="checkbox" id="customCheckInline3" name="customCheckInline3">
+                          <label for="customCheckInline3">Grit blasted</label>
+                        </div>                  
+                      </div>
+                    </div>                      
+                  </div>
                 </div>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                  <label class="form-check-label" for="flexRadioDefault1">
-                    Inches
-                  </label>
+                <div class="col-12 col-lg-5">
+                  <img src="assets/images/custom/number-select-detail.svg" alt="">
                 </div>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                  <label class="form-check-label" for="flexRadioDefault1">
-                    Metric
-                  </label>
-                </div>              
-              </div>            
-              <div class="mb-3">
-                <label for="" class="d-flex">Fermentum accumsan enim.</label>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                  <label class="form-check-label" for="inlineCheckbox1">Slot/slit</label>
-                </div>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                  <label class="form-check-label" for="inlineCheckbox1">Notched</label>
-                </div>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                  <label class="form-check-label" for="inlineCheckbox1">Angled</label>
-                </div> 
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                  <label class="form-check-label" for="inlineCheckbox1">Trued</label>
-                </div>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                  <label class="form-check-label" for="inlineCheckbox1">Grit blasted</label>
-                </div>                            
-              </div>              
+              </div>
             </div>
-            <div class="part-number-selector-form-bottom">
-
+            <div class="part-number-selector-form-bottom bg-grey">
+              <div class="part-number-selector-form-grid">
+                <div class="col-item">
+                  <div class="bubble top">
+                    <h6>O.D.X.I.D.</h6>
+                    <p>I.D. is not shown in part number</p>
+                  </div>                  
+                </div>
+                <div class="col-item">
+                  <div class="bubble top">
+                    <h6>THICKNESS [Limited by]</h6>
+                    <ul>
+                      <li>Grit size</li>
+                      <li>Matrix type</li>
+                    </ul>
+                  </div>                    
+                </div>
+                <div class="col-item">
+                  <div class="bubble top">
+                    <h6>GRIT / DIAMOND SIZE</h6>
+                  </div>                   
+                </div>
+                <div class="col-item">
+                  <div class="form-fields">
+                    <select class="form-control" id="select-5">
+                      <option value="default">comp shingle</option>
+                      <option value="AL">roof shingle</option>
+                    </select>
+                    <input class="form-control" type="text" placeholder="WAG">                
+                  </div>                   
+                </div>                
+                <div class="col-item">
+                  <div class="form-fields">
+                    <input class="form-control" type="text" placeholder="WAG">                       
+                    <select class="form-control" id="select-5">
+                      <option value="default">comp shingle</option>
+                      <option value="AL">roof shingle</option>
+                    </select>
+                  </div>                  
+                </div>
+                <div class="col-item">
+                  <div class="form-fields">
+                    <select class="form-control" id="select-5">
+                      <option value="default">comp shingle</option>
+                      <option value="AL">roof shingle</option>
+                    </select>
+                    <select class="form-control" id="select-5">
+                      <option value="default">comp shingle</option>
+                      <option value="AL">roof shingle</option>
+                    </select>                                 
+                  </div>                    
+                </div>
+                <div class="col-item">
+                  <div class="bubble bottom">
+                    <h6>SPECIAL PROCESS [options]</h6>
+                    <ul>
+                      <li>Slotting / Slits</li>
+                      <li>Notches</li>
+                      <li>Custon Angles</li>
+                      <li>Truing</li>
+                      <li>Notches</li>
+                    </ul>
+                  </div>                  
+                </div>
+                <div class="col-item">
+                  <div class="bubble bottom">
+                    <h6>TOLERANCE</h6>
+                    <p>TCAR Proprietary Molding ensures top tier accuracy</p>
+                  </div>                  
+                </div>
+                <div class="col-item">
+                  <div class="bubble bottom">
+                    <p>MATRIX is what Thermocarbon uses to cosolidate many complex variables to simplify what application is recommended to start from.</p>
+                  </div>                  
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -348,7 +428,8 @@
       let root = document.documentElement;
       let color = document.querySelector('.color-piker');
       document.querySelector('#color').addEventListener('change',function(e){
-        root.style.setProperty('--global--color-primary', e.target.value);
+        root.style.setProperty('--global--color-primary', e.target.value);      
+
       })
     </script>
   </body>
