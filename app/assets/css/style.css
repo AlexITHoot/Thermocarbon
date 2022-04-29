@@ -14365,6 +14365,15 @@ footer .content-block.content-headquarters .footer-widget-content {
 .services .owl-carousel .owl-stage-outer .owl-stage .owl-item div {
   display: flex;
 }
+.services.dicing-flanges-page .owl-carousel .owl-stage-outer .owl-stage {
+  display: block;
+}
+.services.dicing-flanges-page .owl-carousel .owl-stage-outer .owl-stage .owl-item {
+  display: block;
+}
+.services.dicing-flanges-page .owl-carousel .owl-stage-outer .owl-stage .owl-item div {
+  display: block;
+}
 
 .part-number-selector-form {
   background: var(--global--color-white) url("/assets/images/custom/Ellipse.svg") no-repeat top right;
@@ -14536,6 +14545,77 @@ footer .content-block.content-headquarters .footer-widget-content {
   transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   opacity: 0;
   transform: scale(0);
+}
+
+.blog .blog-entry .entry-bio.trunc p {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.about-page.features {
+  z-index: 2;
+}
+.about-page.features .list-unstyled li {
+  color: #fff;
+}
+.about-page.about {
+  padding-top: 250px;
+}
+.about-page.testimonial {
+  padding-top: 300px;
+}
+.about-page.contact .contact-card {
+  margin-right: 30px;
+}
+
+.r-d-services.processes {
+  padding-top: 100px;
+  padding-bottom: 200px;
+}
+.r-d-services .content p {
+  color: #fff;
+  margin-bottom: 20px;
+}
+.r-d-services .content figure {
+  margin-bottom: 30px;
+}
+.r-d-services .content figure span {
+  display: inline-block;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 15px;
+}
+.r-d-services .content figure ul li {
+  color: #fff;
+}
+
+.dicing-flanges-page.features-bar .feature-panel {
+  height: 100%;
+}
+.dicing-flanges-page.features-bar .feature-panel .icon {
+  margin-bottom: 7px;
+  width: 94px;
+  height: 94px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: var(--global--color-white);
+  color: var(--global--color-primary);
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s ease-in-out;
+}
+.dicing-flanges-page.features-bar .feature-panel .icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.dicing-flanges-page.features-bar .feature-panel:hover .icon {
+  transform: rotate(360deg);
+  box-shadow: 0 0 0 3px var(--global--color-primary);
 }
 
 @media only screen and (max-width: 992px) {

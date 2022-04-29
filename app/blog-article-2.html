@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+  <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="author" content="Ayman Fikry"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <meta name="description" content="How do the main components of the wafer dicing system interact? Getting started with an effective dicing system."/>
+    <title>The role of flanges and spacers in wafer dicing systems</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/custom/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/custom/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/custom/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/images/custom/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/images/custom/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!--  Fonts ==
+    -->
+    <link rel="preconnect" href="https://fonts.gstatic.com"/>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&amp;family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&amp;display=swap" rel="stylesheet"/>
+    <!--  Stylesheets==
+    -->
+    <link href="assets/css/vendor.min.css" rel="stylesheet"/>
+    <link href="assets/css/style.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <div class="preloader">
+      <div class="dual-ring"></div>
+    </div>
+    <!-- Document Wrapper-->
+    <div class="wrapper clearfix" id="wrapperParallax">
+      <!-- 
+      ============================
+      Header #2
+      ============================
+      -->
+      <header class="header header-light header-topbar header-topbar1 header-shadow" id="navbar-spy">
+        <div class="top-bar">
+          <div class="block-left"> 
+            <div class="top-contact">
+              <div class="contact-infos"><i class="energia-phone-Icon"></i>
+                <div class="contact-body"> 
+                  <p>phone: <a href="tel:1-800-523-1946">1-800-523-1946</a></p>
+                </div>
+              </div>
+              <div class="contact-infos"><i class="energia-clock-Icon"></i>
+                <div class="contact-body"> 
+                  <p>hours: 8:30am-5pm eastern</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="block-right">
+            <div class="module module-language">
+              <div class="selected"><img src="assets/images/module-language/flag-usa.svg" alt="EN Language"/><span>English</span><i class="fas fa-chevron-down"></i></div>
+              <div class="lang-list">
+                <ul> 
+                  <li> <img src="assets/images/module-language/flag-cn.svg" alt="CN Language"/><a href="#">Chinese</a></li>
+                  <li> <img src="assets/images/module-language/flag-de.svg" alt="DN Language"/><a href="#">Deutsche</a></li>
+                  <li> <img src="assets/images/module-language/flag-jp.svg" alt="JP Language"/><a href="#">Japanese</a></li>                  
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-sticky" id="primary-menu"><a class="navbar-brand" href="index.html"><img class="logo logo-dark" src="assets/images/logo/logo.png" alt="Logo"/></a>
+          <div class="module-holder module-holder-phone">
+            <div class="module module-search">
+              <div class="module-icon module-icon-search"><i class="energia-search-Icon"></i></div>
+            </div>
+            <div class="module module-cart">
+              <div class="module-icon module-icon-cart"><i class="fas fa-shopping-cart"></i><span class="title">shop cart</span>
+                <label class="module-label">2</label>
+              </div>
+              <div class="module-cart-warp">  
+                <ul class="cart-overview">
+                  <li> <img src="assets/images/shop/thumb/1.png" alt="product"/>
+                    <div class="product-meta"> 
+                      <h5>pentair controller</h5>
+                      <p>$ 325.00</p>
+                    </div><a class="cart-cancel" href="javascript:void(0)"><i class="fas fa-times"></i></a>
+                  </li>
+                  <li> <img src="assets/images/shop/thumb/2.png" alt="product"/>
+                    <div class="product-meta"> 
+                      <h5>solar royal</h5>
+                      <p>$ 295.00</p>
+                    </div><a class="cart-cancel" href="javascript:void(0)"><i class="fas fa-times"></i></a>
+                  </li>
+                </ul><span>total: <i class="total-price">$620.00</i></span>
+                <div class="cart--control"> <a class="btn" href="shop-cart.html">view cart</a></div>
+              </div>
+            </div>
+            <div class="module module-language">
+              <div class="selected"><img src="assets/images/module-language/en.png" alt="En Language"/><span>english</span><i class="fas fa-chevron-down"></i></div>
+              <div class="lang-list">
+                <ul> 
+                  <li> <img src="assets/images/module-language/en.png" alt="En Language"/><a href="#">english</a></li>
+                  <li> <img src="assets/images/module-language/ar.png" alt="AR Language"/><a href="#">arabic</a></li>
+                </ul>
+              </div>
+            </div>
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          </div>
+          <div class="collapse navbar-collapse" id="navbarContent">
+                        <ul class="navbar-nav me-auto">
+                          <li class="nav-item" data-hover="" id="contact">
+                            <a href="#"><span>Home</span></a>
+                          </li>
+                          <li class="nav-item has-dropdown" data-hover="">
+                            <a class="dropdown-toggle" href="#" data-toggle="dropdown"><span>Products</span></a>
+                            <ul class="dropdown-menu">
+                              <li class="nav-item"><a href="page-about.html"><span>Blades</span></a></li>
+                              <li class="nav-item"><a href="page-how-works.html"><span>Flanges</span></a></li>
+                              <li class="nav-item"><a href="page-team.html"><span>Selector</span></a></li>
+                            </ul>
+                          </li>
+                          <li class="nav-item has-dropdown" id="departments" data-hover="">
+                            <a class="dropdown-toggle" href="page-services.html" data-toggle="dropdown"><span>Services</span></a>
+                            <ul class="dropdown-menu">
+                              <li class="nav-item"><a href="services-turbines.html"><span>R&D</span></a></li>
+                              <li class="nav-item"><a href="services-solar.html"><span>Support</span></a></li>
+                              <li class="nav-item"><a href="services-battery.html"><span>Research</span></a></li>
+                            </ul>
+                          </li>
+                          <li class="nav-item" id="contact" data-hover="">
+                            <a href="#"><span>About</span></a>
+                          </li>
+                          <li class="nav-item active" id="contact" data-hover="">
+                            <a href="#"><span>Blog</span></a>
+                          </li>
+                          <li class="nav-item" id="contact" data-hover="">
+                            <a href="page-contact.html"><span>Contacts</span></a>
+                          </li>
+                        </ul>
+            <div class="module-holder">
+              <div class="module module-search">
+                <div class="module-icon module-icon-search"><i class="energia-search-Icon"></i></div>
+              </div>
+              <div class="module-contact"><a class="btn btn--primary " href="request-quote.html">
+                   request a quote<i class="energia-arrow-right"></i></a></div>
+            </div>
+            <!--  End .module-holder-->
+          </div>
+          <!--  End .navbar-collapse-->
+        </nav>
+        <!--  End .navbar-->
+      </header>
+      <!-- End .header-->
+      <!--
+      ============================
+      Module Search
+      ============================
+      -->
+      <div class="module-content module-search-warp">
+        <div class="pos-vertical-center">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12 col-md-12 col-lg-8 offset-lg-2">
+                <form class="form-search">
+                  <input class="form-control" type="text" placeholder="type words then enter"/>
+                  <button></button>
+                </form>
+                <!-- End .form-search -->
+              </div>
+              <!-- End .col-lg-8 -->
+            </div>
+            <!--  End .row-->
+          </div>
+          <!--  End .container-->
+        </div><a class="module-cancel" href="#"><i class="fas fa-times"></i></a>
+        <!-- End .module-cancel-->
+      </div>
+      <!--
+      ============================
+      PageTitle Blank #2 Section
+      ============================
+      -->
+      <section class="page-title page-title-blank-2 bg-white" id="page-title">
+        <div class="container">
+          <div class="row">
+            <div class="col"> 
+              <h1 class="d-none">Wafer dicing System and Substrate Interaction Considerations</h1>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="breadcrumb-wrap">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                  <li class="breadcrumb-item"><a href="blog.html">blog</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Wafer dicing System and Substrate Interaction Considerations</li>
+                </ol>
+              </div>
+              <!-- End .title -->
+            </div>
+            <!-- End .col-lg-8-->
+          </div>
+          <!-- End .row-->
+        </div>
+        <!-- End .container-->
+      </section>
+      <!-- End #page-title-->
+      <!--
+      ============================
+      Blog Single Section
+      ============================
+      -->
+      <section class="blog blog-single" id="blog">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-8">
+              <div class="blog-entry">
+                <div class="entry-img"><img src="assets/images/blog/single/1.jpg" alt="entry image"/>
+                  <div class="entry-meta">
+                    <div class="entry-category"><a href="blog-grid.html">energy</a><a href="blog-grid.html">systems</a></div>
+                    <div class="entry-date"> <span class="date">22 jan</span><span class="year">2021</span></div>
+                    <div class="entry-author"><a href="blog-grid.html">karl barry</a></div>
+                    <div class="entry-comments"><span>comments:</span><span class="num">2</span></div>
+                  </div>
+                  <!-- End .entry-meta-->
+                </div>
+                <div class="entry-content">
+                  <div class="entry-title">
+                    <h4>Wafer dicing System and Substrate Interaction Considerations</h4>
+                  </div>
+                  <div class="entry-bio">
+                    <p>While most end-users will take considerable steps in assuring the rigidity of the machine they purchase, 
+                    they may overlook the critical mounting requirements necessary for the diamond blade. 
+                    No matter how well the diamond blade was manufactured to run true, it can only run as accurately as the surfaces it comes into contact with. 
+                    The bearing surfaces of the flanges or spacers must be flat, clean, and parallel.</p>
+                    <p>Spacers used in gang cutting operations are generally made from aluminum or titanium carbide, depending on the application. 
+                    Flanges or adapters for single-blade mounting are usually 4 made from stainless steel. 
+                    The flanges will incorporate an undercut to reduce the bearing surface area in order to enhance intimate contact with the diamond blade. 
+                    These surfaces, as well as the diamond blade surfaces, must be clean, with no loose particles present prior to assembly. 
+                    This ensures proper fitting of the mating surfaces.</p>
+                    <p>Microscopic inspection is required of flange surfaces between blade changes to ensure their integrity. 
+                    Any repairing of the bearing surfaces should be accomplished by lapping. 
+                    In extreme cases, remachining of the flange may be necessary. 
+                    All flanges and spacers have torque specifications to prevent distortion and ultimate separation of the bearing surfaces from the surfaces of the diamond blade. 
+                    The most frequent cause of blade breakage and oversize cut widths with relation to blade thickness is improper flange torque or poor flange quality.</p>
+                    <p>Flanges and spacers must not induce vibration at operating spindle speeds. 
+                    One method of determining whether or not the flange or spacer assembly is the source of vibration is to remove them from the spindle arbor, 
+                    ramp up to operating speed, and see if the vibration is present. 
+                    If no vibration exists then, the flanges or spacers are the problem. 
+                    If the vibration persists, the spindle is in need of repair.</p>
+                    <h5>Reasons to pay attention to blade exposure</h5>
+                    <p>Dicing blade exposure, the distance that the cutting edge of the diamond blade protrudes from the flange or spacer periphery, 
+                    is a critical item within the variables affecting the overall rigidity of the sawing system. 
+                    Over-exposure may cause wider than desired kerf, excessive edge chipping, nonsquareness of cut, and blade breakage, 
+                    while too little exposure of dicing blade can divert the critical coolant supply from the blade/material interface.</p>
+                    <p>There exist no definitive rules for determining the optimum dicing  blade exposure for a specific application.
+                    Some blade manufacturers have published guidelines requiring ten times the blade thickness as the method of determining blade exposure. 
+                    This type of approach does not take into consideration the depth of cut, dicing material hardness, or feed rate, and therefore is highly misleading. 
+                    However, some rule of thumb is necessary to develop a starting point for determining the proper exposure of cutting blade.</p>
+                    <p>The best results will usually be attained by adjusting the original “ten times” (six times the blade thickness for sapphire applications) 
+                    blade thickness guideline in accordance with a prerequisite that at least 1 /3 to 1 /2 of the diamond blade’s exposure be buried into the cut. 
+                    This prerequisite is the dominant variable in establishing proper blade exposure. 
+                    This approach offers improved stability at the start, and depending upon material hardness and feed rates, can be finetuned with only minor adjustments. 
+                    The tendency should be to expose the diamond blade at a minimum to attain maximum blade rigidity, with caution given 
+                    in regard to a possible coolant cut-off or a collision of the flange with the workpiece. 
+                    The alternative is to run a maximum exposure, within the guidelines, to reduce the amount of flange changes required to consume 
+                    the entire working range of the self-sharpening diamond blade.</p>
+                    <p>Equally important to rigid blade mounting procedures are the workpiece mounting methods. 
+                    These two variables of the sawing system are the closest in proximity to the desired finished parts and warrant proper attention. 
+                    The workpiece is normally mounted on an intermediate carrier, which is then mounted onto the chuck surface by vacuum or mechanical means. 
+                    This enables the user to cut completely through the workpiece without causing damage to the chuck surface. 
+                    Vacuum chuck systems require a vacuum gauge to indicate holding stability and assure operating safety.</p>
+                    <p>The two most common intermediate carriers are tape and glass. 
+                    The workpiece is held to the “tacky” side of the tape, while wax is used as the bonding medium for mounting on glass. 
+                    Either system is an acceptable method, but like anything else, they each provide advantages for specific applications. 
+                    The two systems are not competitive, but rather complementary for cutting a wide variety of hard, brittle materials.</p>
+                    <p>Tape or film is normally supplied with one side possessing a light adhesive to provide fair holding power to the workpiece during the cutting process, 
+                    yet still providing ease of part removal after processing. 
+                    These tapes are conducive to easy handling and process automation.</p>
+                    <p>The fact that these tapes are plastic and exhibit elastic qualities explains why they should only be used in light-cutting applications. 
+                    Rigidity is paramount to cutting hard materials, and mounting a part on plastic that will stretch or shift during cutting defeats the system rigidity concept. 
+                    Secondly, diamond blades do not cut plastic, but rather displace the plastic material, creating a burr. 
+                    This plastic burr, having no place else to go, is forced under the edges of the material being processed, which in turn pushes the material upward along the cut edge. 
+                    Subsequently, when cutting 90 degrees to the original cuts the strips of the material being processed will either break loose or vibrate against the cutting edge of the diamond blade.</p>
+                    <h5>Diamond dicing blade thickness: How to process wafer material efficiently?</h5>
+                    <p>Another concern with using tapes is the thickness of the diamond blade being used for processing a given dicing material. 
+                    Not only is thickness a function of the amount of plastic being displaced, but also the radius formed on the blade edge. 
+                    Diamond blades designed for hard material cutting, such as the resin-bonded type, form a natural radius at its comers along the cutting edge. 
+                    This radius provides stress-free cutting of hard materials, however, its profile is propagated to the material being processed 
+                    if it is not positioned well below the material being cut. The thicker the blade is, the larger the radius. 
+                    The tapes which are normally only three mils in thickness do not allow passing 
+                    the cutting edge of the diamond blade adequately below the bottom of the substrate.</p>
+                    <p>Doubling the tape to a thickness of six mils, or acquiring a thicker tape, only compounds the plastic displacement problem, 
+                    and will further hinder system rigidity by providing additional plastic qualities to the tape. 
+                    Blade wear becomes excessive when cutting deep into tapes because the plastic will tend to melt around the cutting edge, 
+                    thus preventing efficient cooling, and causing loading of the diamond blade. 
+                    The blade will break down rapidly until only about one mil of the blade is into the tape. 
+                    As the blade continues to cut the substrate, (depending on the number and length of cuts), it will lose that remaining one mil buried into the tape, 
+                    and will not cut completely through the material for the remaining cuts.</p>
+                    <p>Tape should only be used for scribing and light cut-through applications. 
+                    Dicing completely through 0.020 in silicon or 0.015 in thick ceramic materials are examples of light applications for use with tape systems. 
+                    Even in these light applications where cut-through is mandatory, certain precautions must be taken to ensure the desired results. 
+                    The tape must be applied air bubble and dirt-free to ensure solid mounting to the chuck surface. 
+                    Secondly, to prevent parts from being lifted off the tape while dicing, mount the substrate 24 hours prior to processing, 
+                    or use heat when applying the tape to the clean substrate surface. 
+                    The tape should always be applied under a fully prestretched condition through the use of mounting ring systems or various other acceptable mounting stations presently available. 
+                    This pre-stretching reduces the loading of the plastic material onto the blade edge and will prevent the plastic burr from forcing itself under the workpiece.</p>
+                    <h5>Methods to cut thicker materials with dicing blades</h5>
+                    <p>Generally, thicker dicing materials must be cut on glass or graphite carriers to assure cutting completely through the workpiece consistently. 
+                    In critical applications, this method will reduce the cutting forces required to process the workpiece. 
+                    The latter requires that the carrier be softer than the workpiece being processed. 
+                    Glass possesses a dressing property conducive to diamond grinding, and is acceptable for most applications. Soda-lime, or simply window glass is sufficient,
+                     if relatively flat to ensure a proper fit to the chuck surface.</p>
+                    <p>It also is good practice to cut a minimum of five mils (0.127mm) into the glass carrier for most applications. 
+                    This will ensure straight, parallel cut edges in the workpiece, and provide adequate assurance of cutting completely through the substrate up to the final cut. 
+                    With thicker materials (i.e. 50 to 100 mils), it is recommended to cut 10 to 15 mils or more into the 
+                    glass carrier in order to reduce the amount that the cutting edge of the diamond blade is in contact with the harder workpiece. 
+                    This method is very efficient when cutting through extremely hard materials such as GaAs, sapphire, or high-density ceramics.</p>
+                    <p>The most common problem associated with the wax mounting of materials for cutting is the choice of wax. 
+                    Most waxes result in “loading,” so that caution should be used in their selection. 
+                    Most brown waxes are acceptable, but waxes such as beeswax or those containing paraffin should be avoided. 
+                    Wax should always be kept at a minimum, with any excess removed prior to cutting.</p>
+                    <p>Wax loading of the diamond blade is easily detected by inspecting the cutting edge of the blade for a glossy appearance. 
+                    Wax fills the voids generated by the diamond blade as used abrasives are pulled from the cutting face. 
+                    These microscopic voids are necessary for the diamond blade to carry coolant into the cut, and to serve as 
+                    a conduit for removing particles of material generated during the abrasive machining process. 
+                    Interference with this self-sharpening process of abrasive machining will result in excessive heat in the cut, and eventual blade breakage.</p>
+                    <h5>Operating within an Efficient Dicing System - Where do I Start?</h5>
+                    <p>Determining the work to be done and applying the guidelines for building an efficient sawing system, covered in part one of this article, 
+                    will dramatically increase the chances for success in processing any given material. However, 
+                    there is a need to understand how the remaining variable process components such as the diamond blade, 
+                    and system operating parameters, can affect the total system.</p>
+                    <p>The following sections will deal with hard, brittle material processing and the resin-bonded diamond blade. 
+                    The case histories described will only list the variables necessary for appropriate background and understanding 
+                    as to why a given variable component was selected or modified.</p>
+                    <p>The resin-bond blade matrix is a very complicated composite system made up of abrasives, fillers, and resin, of which the combinations are infinite. 
+                    No one combination exists that can dice all materials successfully. 
+                    Internal variations of diamond grit, resin strength, concentration, and fillers, all affect, differently, the results attained in a specific application.</p>
+                    <h5>Main criteria to choose a proper diamond dicing blade</h5>
+                    <p>Selection of the proper diamond blade for a specific application is an essential step in achieving an efficient diamond grinding process. 
+                    The optimal diamond blade is one in which the bond will wear at the same rate as the diamond particles dull during the cutting operation at a given set of parameters. 
+                    The problem is twofold: For each diamond blade matrix, there exists an optimal operating range. 
+                    A simple approach to determining this “steady state” for a given diamond blade is to collect 
+                    the data with regard to the amount of blade wear realized over a given distance. 
+                    Increasing the distance over which the blade wear can be significantly measured will improve the accuracy and validity of the results</p>
+                    <p>Premature diamond particle pull-out from the bond is the characteristic of a bond too soft for the application. 
+                    Such bonds will cause premature blade failure and be susceptible to loading at the cutting edge. 
+                    A bond that tends to hold the diamond particles beyond their usefulness is considered too hard for a specific application. 
+                    A bond that is too hard will cause burning in the cut and glazing of the blade’s cutting edge. 
+                    Exactly how the diamond blade will act - hard or soft - is also determined by the parameters under which it is operating (e.g. feed rate and spindle speed).</p>
+                    <p>The diamond particle size, or grit, within the blade’s matrix, will also affect the hard or soft acting characteristics of a diamond blade. 
+                    Coarser diamonds are best suited to heavy or faster stock removals, 
+                    while finer diamond sizes perform best in lighter applications and where a fine finish on the workpiece is desired. 
+                    Generally, finer diamond sizes demand higher horsepower than coarser diamonds and generate higher heat levels in the cut.
+                     A normal approach to diamond size selection is to choose the largest diamond size available for a particular blade thickness, 
+                     and work down in size until the desired finish is obtained.</p>
+                     <p>The final criteria in blade selection are the tolerances employed at the manufacture of the blade. 
+                      Thickness tolerances must be specified to the end-user so that he is aware of the blade’s limitations to run true. 
+                      Loose thickness tolerances will not allow proper seating of the bearing surfaces for even the finest of flanges or spacers.</p>
+                  </div>
+                  <div class="entry-holder">
+                    <div class="entry-tags"><span>tags: </span><a href="blog-grid.html">solar</a><a href="blog-grid.html">insights</a><a href="blog-grid.html">systems</a><a href="blog-grid.html">battery</a><a href="blog-grid.html">research</a><a href="blog-grid.html">energy</a></div>
+                    <!-- End .entry-tags-->
+                    <div class="entry-share"><span>share this article</span>
+                      <div><a class="share-facebook" href="javascript:void(0)"><i class="fab fa-facebook-f"></i></a><a class="share-instagram" href="javascript:void(0)"><i class="fab fa-twitter"></i></a><a class="share-twitter" href="javascript:void(0)"><i class="fab fa-linkedin-in"></i></a></div>
+                    </div>
+                    <!-- End .entry-share-->
+                  </div>
+                </div>
+                <div class="nav-posts">
+                  <div class="prev-post">
+                    <div class="post-img">
+                      <div class="overlay"> <i class="energia-arrow-right"></i></div><img src="assets/images/blog/thumb/prev.png" alt="title"/>
+                    </div>
+                    <div class="post-body"><span>previous post</span><a class="post-link" href="blog-single.html">energy research will help eagles coexist wind</a></div>
+                  </div>
+                  <div class="next-post">
+                    <div class="post-body"><span>next post</span><a class="post-link" href="blog-single.html">the middle east's top new alternative energy source</a></div>
+                    <div class="post-img">
+                      <div class="overlay"> <i class="energia-arrow-right"></i></div><img src="assets/images/blog/thumb/next.png" alt="title"/>
+                    </div>
+                  </div>
+                </div>
+                <div class="entry-widget-bio">
+                  <div class="entry-widget-content"><img src="assets/images/blog/author/2.jpg" alt="author"/>
+                    <div class="entry-bio-desc">
+                      <h4>Mahmoud Baghagho</h4>
+                      <p>Founded by Begha over many cups of tea at her kitchen table in 2009, our brand promise is simple: to provide powerful digital marketing solutions.</p><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <!-- End .entry-bio-->
+                <div class="entry-widget entry-comments" id="comments">
+                  <div class="entry-widget-title">
+                    <h4><span class="comments-number">2</span> comments</h4>
+                  </div>
+                  <div class="entry-widget-content">
+                    <ul class="comments-list">
+                      <li class="comment-body">
+                        <div class="avatar"><img src="assets/images/blog/author/1.png" alt="avatar"/></div>
+                        <div class="comment">
+                          <h6>Richard Muldoone</h6>
+                          <div class="date">Feb 28, 2019 - 08:07 pm</div>
+                          <p>The example about the mattress sizing page you mentioned in the last WBF can be a perfect example of new keywords and content, and broadening the funnel as well. I can only imagine the sale numbers if that was the site of a mattress selling company.</p><a class="reply" href="#comments">reply</a>
+                          <ul class="replies-list">
+                            <li class="comment-body">
+                              <div class="avatar"><img src="assets/images/blog/author/2.png" alt="avatar"/></div>
+                              <div class="comment">
+                                <h6>mike dooley</h6>
+                                <div class="date">Feb 28, 2019 - 08:22 pm</div>
+                                <p>The example about the mattress sizing page you mentioned in the last WBF can be a perfect example of new keywords and content, and broadening the funnel as well. I can only imagine the sale numbers if that was the site of a selling company.</p><a class="reply" href="#comments">reply</a>
+                              </div>
+                              <!-- End .reply-->
+                            </li>
+                          </ul>
+                          <!-- End .replies-list-->
+                        </div>
+                      </li>
+                      <!-- End .comment-->
+                    </ul>
+                    <!-- End .comments-list-->
+                  </div>
+                </div>
+                <!-- End .entry-comments-->
+                <div class="entry-widget entry-add-comment mb-0 clearfix">
+                  <div class="entry-widget-title">
+                    <h4>Leave A Reply</h4>
+                  </div>
+                  <div class="entry-widget-content">
+                    <form class="mb-0" id="post-comment">
+                      <div class="row">
+                        <div class="col-12 col-lg-4">
+                          <input class="form-control" type="text" placeholder="Name"/>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                          <input class="form-control" type="email" placeholder="Email"/>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                          <input class="form-control" type="text" placeholder="Website"/>
+                        </div>
+                        <div class="col-12">
+                          <textarea class="form-control" rows="2" placeholder="Comment"></textarea>
+                        </div>
+                        <div class="col-12">
+                          <div class="custom-radio-group">
+                            <div class="custom-control custom-radio custom-control-inline">
+                              <input class="custom-control-input" type="radio" id="customRadioInline1" name="customRadioInline1"/>
+                              <label for="customRadioInline1">Save my name, email, and website in this browser for the next time I comment.</label>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <button class="btn btn--primary btn-line btn-line-before" type="submit"><span>submit comment</span><i class="energia-arrow-right"></i></button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <!-- End .entry-comments-->
+              </div>
+              <!-- End .blog-entry-->
+            </div>
+            <!-- End .col-lg-8-->
+            <div class="col-12 col-lg-4">
+              <!-- 
+              ============================
+              Sidebar Blog
+              ============================
+              -->
+              <div class="sidebar sidebar-blog">
+                <!-- Search-->
+                <div class="widget widget-search">
+                  <div class="widget-title"> 
+                    <h5>search</h5>
+                  </div>
+                  <div class="widget-content">
+                    <form class="form-search">
+                      <div class="input-group">
+                        <input class="form-control" type="text" placeholder="Search ..."/><span class="input-group-btn">
+                          <button class="btn" type="button"><i class="energia-search-Icon"></i></button></span>
+                      </div>
+                      <!-- End .input-group-->
+                    </form>
+                  </div>
+                </div>
+                <!-- End .widget-search -->
+                <!-- Recent Posts-->
+                <div class="widget widget-recent-posts">
+                  <div class="widget-title">
+                    <h5>recent posts</h5>
+                  </div>
+                  <div class="widget-content">
+                    <!-- Start .Post-->
+                    <div class="post">
+                      <div class="post-img"><img src="assets/images/blog/sidebar/post-1.jpg" alt="post img"/></div>
+                      <div class="post-content">
+                        <div class="post-date"><span class="date">jan 25</span><span class="year">2021</span></div>
+                        <div class="post-title"><a href="blog-single.html">filling solar power permits in 2020? consider following </a></div>
+                      </div>
+                    </div>
+                    <!-- End .post-->
+                    <!-- Start .Post-->
+                    <div class="post">
+                      <div class="post-img"><img src="assets/images/blog/sidebar/post-2.jpg" alt="post img"/></div>
+                      <div class="post-content">
+                        <div class="post-date"><span class="date">jan 27</span><span class="year">2021</span></div>
+                        <div class="post-title"><a href="blog-single.html">How to Add Battery Backup to an Existing Grid Tied</a></div>
+                      </div>
+                    </div>
+                    <!-- End .post-->
+                    <!-- Start .Post-->
+                    <div class="post">
+                      <div class="post-img"><img src="assets/images/blog/sidebar/post-3.png" alt="post img"/></div>
+                      <div class="post-content">
+                        <div class="post-date"><span class="date">jan 23</span><span class="year">2021</span></div>
+                        <div class="post-title"><a href="blog-single.html">Energy Research Will Help Eagles Coexist Wind</a></div>
+                      </div>
+                    </div>
+                    <!-- End .post-->
+                  </div>
+                </div>
+                <!-- End .widget-recent-posts -->
+                <!-- Categories-->
+                <div class="widget widget-categories">
+                  <div class="widget-title">
+                    <h5>categories</h5>
+                  </div>
+                  <div class="widget-content">
+                    <ul class="list-unstyled">
+                      <li><a href="blog-grid.html">Wind Turbines</a><span>9</span></li>
+                      <li><a href="blog-grid.html">Solar Panels</a><span>2</span></li>
+                      <li><a href="blog-grid.html">Battery Matrial</a><span>5</span></li>
+                      <li><a href="blog-grid.html">Hydro Plants</a><span>1</span></li>
+                      <li><a href="blog-grid.html">Fossil Resourc</a><span>7</span></li>
+                      <li><a href="blog-grid.html">Charge Control</a><span>10</span></li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- End .widget-categories -->
+                <!-- Tags-->
+                <div class="widget widget-tags">
+                  <div class="widget-title">
+                    <h5>Tags</h5>
+                  </div>
+                  <div class="widget-content"><a href="blog-grid.html">Battery</a><a href="blog-grid.html">Hydro</a><a href="blog-grid.html">infectious</a><a href="blog-grid.html">Plants</a><a href="blog-grid.html">Solar</a><a href="blog-grid.html">Turbines</a><a href="blog-grid.html">Fossil</a>
+                  </div>
+                </div>
+                <!-- End .widget-tags -->
+              </div>
+              <!-- End .sidebar-->
+            </div>
+            <!-- End .col-lg-4-->
+          </div>
+          <!-- End .row-->
+        </div>
+        <!-- End .container-->
+      </section>
+      <!--
+      ============================
+      Footer #1
+      ============================
+      -->
+      <footer class="footer footer-1">
+        <div class="footer-top">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-sm-6 col-md-6 col-lg-2">
+                <div class="footer-widget  widget-links">
+                  <div class="footer-site-map">
+                    <div class="footer-widget-title">
+                      <h5>Site Map</h5>
+                    </div>
+                    <div class="widget-content">
+                      <ul>
+                          <li><a href="#">Home</a></li>
+                          <li><a href="#">Products</a></li>
+                          <li><a href="#">Services</a></li>
+                          <li><a href="#">About</a></li>
+                          <li><a href="#">Blog</a></li>
+                          <li><a href="#">Contacts</a></li>
+                      </ul>                    
+                    </div>
+                  </div>                  
+                </div>
+              </div>
+              <!--  End .col-lg-2-->
+              <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+                <div class="footer-map">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m19!1m8!1m3!1d28004.43229695136!2d-81.34600140197759!3d28.67306894845949!3m2!1i1024!2i768!4f13.1!4m8!3e0!4m0!4m5!1s0x88e771fed450dd55%3A0xe1c34c530e9ea45d!2zMzkxIE1lbG9keSBMbiBXLCBDYXNzZWxiZXJyeSwgRkwgMzI3MDcsINCh0KjQkA!3m2!1d28.6726529!2d-81.3453128!5e0!3m2!1sru!2sua!4v1648723863980!5m2!1sru!2sua" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+              </div>
+              <!--  End .col-lg-5-->
+              <div class="col-12 col-md-6 col-lg-3 offset-lg-1">
+                <div class="footer-widget widget-links">
+                  <div class="widget-content">
+                    <div class="content-block content-assistance">
+                      <div class="footer-widget-title">
+                        <h5>Immediate Assistance</h5>
+                      </div>
+                      <div class="footer-widget-content">
+                        <svg width="24" height="25" fill="none" class="phone">
+                          <use
+                              xlink:href="assets/images/custom/icons.svg#phone">
+                          </use>
+                        </svg>
+                          <a href="tel:1-800-523-1946">1-800-523-1946</a>
+                      </div>
+                      <div class="footer-widget-content">
+                        <svg width="24" height="25" fill="none" class="clock">
+                          <use
+                              xlink:href="assets/images/custom/icons.svg#clock">
+                          </use>
+                        </svg>
+                          <span>8:30-5pm eastern</span>
+                      </div> 
+                    </div>
+                    <div class="content-block content-headquarters">
+                      <div class="footer-widget-title">
+                        <h5>International Headquarters</h5>
+                      </div>
+                      <div class="footer-widget-content">
+                          <svg width="24" height="24" fill="none" class="pointer">
+                            <use
+                                xlink:href="assets/images/custom/icons.svg#pointer">
+                            </use>
+                          </svg>
+                          <p>Thermocarbon Inc. 391<br> Melody Lane Casselberry,<br> FL 32707 directions</p>
+                      </div>                                    
+                    </div>                
+                  </div>
+                </div>
+              </div>
+              <!--  End .col-lg-3-->
+            </div>
+            <!-- End .row-->
+          </div>
+          <!--  End .container-->
+        </div>
+        <!--  End .footer-top-->
+        <div class="footer-bottom">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <div class="footer-copyright">
+                  <div class="copyright">
+                    <a class="navbar-brand" href="index.html"><img class="logo logo-dark" src="assets/images/logo/logo.png" alt="Logo"/></a>                    
+                    <span>&copy; 2021 Thermocarbon. All Rights Reserved.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--  End .row-->
+        </div>
+        <!--  End .footer-bottom-->
+      </footer>
+      <!--
+      ============================
+      BackToTop #1
+      ============================
+      -->
+      <div class="back-top" id="back-to-top" data-hover=""><i class="energia-arrow-up"></i></div>
+    </div>
+    <!--  Footer Scripts==
+    -->
+    <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/vendor.js"></script>
+    <script src="assets/js/functions.js"></script>
+  </body>
+</html>

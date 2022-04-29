@@ -1,6 +1,7 @@
 .module-contact{
     margin-left: 0;
 }
+
 footer .footer-map{
     border-radius: 10px;
     overflow: hidden;
@@ -16,12 +17,15 @@ footer .content-block .footer-widget-content{
     align-items: center;
     margin-bottom: 16px;    
 }
+
 footer .content-block .footer-widget-content a{
     color:#9b9b9b;
 }
+
 footer .content-block .footer-widget-content svg{
     margin-right:19px;
 }
+
 footer .content-block.content-headquarters .footer-widget-content {
     -webkit-box-align: start;
     -ms-flex-align: start;
@@ -53,6 +57,7 @@ footer .content-block.content-headquarters .footer-widget-content {
     align-items: center;
     margin-bottom: 16px;
 }
+
 .contact .contact-widget-content img{
     margin-right: 20px;
 }
@@ -71,12 +76,15 @@ footer .content-block.content-headquarters .footer-widget-content {
 .projects.projects-grid .carousel .owl-nav .owl-next,.projects.projects-grid .carousel .owl-nav .owl-prev{
     position: relative;
 }
+
 .contact .contact-panel p{
     color:#fff;
 }
+
 .counters{
     padding-bottom: 0;
 }
+
 .blades-img3{
     margin-left: -100px;
 }
@@ -137,6 +145,21 @@ footer .content-block.content-headquarters .footer-widget-content {
             }               
           }
       }    
+    }
+    &.dicing-flanges-page{
+    .owl-carousel{
+      .owl-stage-outer{
+          .owl-stage{
+            display: block;
+            .owl-item{
+                display: block;
+                div{
+                    display: block;
+                }
+            }               
+          }
+      }    
+    }        
     } 
 }
 
@@ -146,6 +169,7 @@ footer .content-block.content-headquarters .footer-widget-content {
     padding: 32px;
     margin-top: 80px;
 }
+
 .part-number-selector-form-top{
     margin-bottom: 30px;
     .form-label{
@@ -155,6 +179,7 @@ footer .content-block.content-headquarters .footer-widget-content {
         max-width: 100%;
     }
 }
+
 .part-number-selector-form-bottom{
     border-radius: 8px;
     padding: 32px;
@@ -316,6 +341,103 @@ footer .content-block.content-headquarters .footer-widget-content {
                 transition      : 0.3s cubic-bezier(0.4, 0, 0.2, 1);
                 opacity         : 0;
                 transform       : scale(0)
+            }
+        }
+    }
+}
+
+.blog{
+    .blog-entry{
+        .entry-bio{
+            &.trunc{
+                p{
+                    overflow: hidden;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 3;
+                    -webkit-box-orient: vertical;  
+                }                
+            }
+        }
+    }
+}
+
+.about-page{
+    &.features{
+        z-index: 2;
+        .list-unstyled{
+            li{
+                color:#fff;                
+            }
+        }
+    }
+    &.about{
+        padding-top: 250px;
+    }
+    &.testimonial{
+        padding-top: 300px;
+    }
+    &.contact{
+        .contact-card{
+            margin-right: 30px;
+        }
+    }
+}
+
+.r-d-services{
+    &.processes{
+        padding-top: 100px;
+        padding-bottom: 200px;
+    }
+    .content{
+        p{
+            color:#fff;
+            margin-bottom: 20px;          
+        }
+        figure{
+            margin-bottom: 30px;
+            span{
+                display: inline-block;
+                font-size: 16px;
+                color: #fff;
+                margin-bottom: 15px;
+            }
+            ul{
+                li{
+                    color: #fff;
+                }
+            }            
+        }
+    }
+}
+
+.dicing-flanges-page{
+    &.features-bar{
+        .feature-panel{
+            height: 100%;
+            .icon{
+                margin-bottom: 7px;
+                width: 94px;
+                height: 94px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+                background-color: var(--global--color-white);
+                color: var(--global--color-primary);
+                position: relative;
+                overflow: hidden;
+                transition: 0.3s ease-in-out;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            &:hover{
+                .icon{
+                    transform : rotate(360deg);
+                    box-shadow: 0 0 0 3px var(--global--color-primary);
+                }
             }
         }
     }
