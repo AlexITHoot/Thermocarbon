@@ -3,13 +3,13 @@
 \*------------------------------------*/
 :root {
     --global--color-primary   : #32c36c;
-    --global--color-primary-90: rgba(50, 195, 108, 0.9);
-    --global--color-primary-70: rgba(50, 195, 108, 0.7);   
+    --global--color-primary-90: #{rgba(50, 195, 108, 0.9)};
+    --global--color-primary-70: #{rgba(50, 195, 108, 0.7)};   
     --global--color-heading   : #253745;
     --global--color-secondary : #2b3e4b;
     --global--color-body      : #9b9b9b;
     --global--color-white     : #ffffff;
-    --global--color-white-90  : rgba(255, 255, 255, 0.9);
+    --global--color-white-90  : #{rgba(255, 255, 255, 0.9)};
     --global--color-gray      : #f9f9f9;
     --global--font-body       : 'Roboto', sans-serif;
     --global--font-heading    : 'IBM Plex Sans', sans-serif;
