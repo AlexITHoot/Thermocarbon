@@ -167,11 +167,15 @@ footer .content-block.content-headquarters .footer-widget-content {
     } 
 }
 
+.part-number-selector{
+    padding-top: 50px;
+}
+
 .part-number-selector-form{
     background: var(--global--color-white) url('/assets/images/custom/Ellipse.svg') no-repeat top right;
     border-radius: 8px;
     padding: 32px;
-    margin-top: 80px;
+    margin-top: 50px;
 }
 
 .part-number-selector-form-top{
@@ -365,6 +369,16 @@ footer .content-block.content-headquarters .footer-widget-content {
     }
 }
 
+.dicing-blade-samples-page{
+    .blog-entry{
+      .entry-content{
+        .entry-title{
+            min-height: 100px;
+        }   
+      }
+    } 
+}
+
 .about-page{
     &.features{
         z-index: 2;
@@ -377,14 +391,33 @@ footer .content-block.content-headquarters .footer-widget-content {
     &.about{
         padding-top: 250px;
     }
-    &.testimonial{
-        padding-top: 300px;
-    }
     &.contact{
         .contact-card{
             margin-right: 30px;
         }
     }
+    &.processes{
+        z-index: 2;
+    }
+    &.testimonial{
+        padding-top: 50px;
+    }
+    .counter.counter-3{
+      .counter-holder{
+        .counter-img{
+            .feature-icon{
+                padding: 10px;
+                border-radius: 50%;
+                background: var(--global--color-primary);
+                svg{
+                    use{
+                        fill:var(--global--color-white);
+                    }
+                }
+            }
+        }    
+      } 
+    } 
 }
 
 .r-d-services{
@@ -443,6 +476,50 @@ footer .content-block.content-headquarters .footer-widget-content {
                     box-shadow: 0 0 0 3px var(--global--color-primary);
                 }
             }
+        }
+    }
+}
+
+.contacts-page{
+    &.testimonial{
+        padding-top: 50px;
+        .contact-panel{
+            margin-top: 0;
+            transform: none;
+        }
+    }
+    .counter.counter-3{
+      .counter-holder{
+        .counter-img{
+            .feature-icon{
+                padding: 10px;
+                border-radius: 50%;
+                background: var(--global--color-primary);
+                svg{
+                    use{
+                        fill:var(--global--color-white);
+                    }
+                }
+            }
+        }    
+      } 
+    }      
+}
+
+.dicing-flanges-page{
+    &.slider{
+        .slide{
+            height: 300px;
+        }
+    }
+    &.features-bar{
+        padding: 50px 0;
+    }
+    .features-holder{
+        margin-bottom: 0;
+        transform: none;
+        .feature-panel{
+            box-shadow: 0px 3px 63px 0px rgb(40 40 40 / 21%);
         }
     }
 }
