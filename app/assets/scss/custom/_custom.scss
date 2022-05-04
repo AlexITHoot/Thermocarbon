@@ -2,6 +2,14 @@
     flex-basis: 100%!important;
 }
 
+.pt-50{
+    padding-top: 50px!important;
+}
+
+.pt-250{
+    padding-top: 250px!important;
+}
+
 .module-contact{
     margin-left: 0;
 }
@@ -37,7 +45,43 @@ footer .content-block.content-headquarters .footer-widget-content {
 }
 
 .contact{
-    background: var(--global--color-primary)!important;
+    background: var(--global--color-white)!important;
+    .contact-widget-title{
+        h5{
+            color:var(--global--color-heading);
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 30px;
+            text-transform: capitalize;
+            margin-bottom: 30px;              
+        }
+    }
+    .contact-widget-content{
+        a,span,p{
+            color:var(--global--color-heading);
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 28px;              
+        }
+        svg{
+            margin-right: 19px;
+            &.phone{
+                use{
+                    stroke:var(--global--color-primary);
+                }
+            }
+            &.clock{
+                use{
+                    stroke:var(--global--color-primary);
+                }
+            }
+            &.pointer{
+                use{
+                    fill:var(--global--color-primary);
+                }
+            }            
+        }
+    }
 }
 
 .contact-card textarea {
@@ -45,15 +89,6 @@ footer .content-block.content-headquarters .footer-widget-content {
     height: 150px;
     padding-left: 16px;
     padding-top: 20px;
-}
-
-.contact .contact-widget-title h5{
-    color: #fff;
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 30px;
-    text-transform: capitalize;
-    margin-bottom: 30px;    
 }
 
 .contact .contact-widget-content{
@@ -70,19 +105,9 @@ footer .content-block.content-headquarters .footer-widget-content {
     align-items: flex-start;
 }
 
-.contact .contact-widget-content a,.contact .contact-widget-content span{
-    color:#fff;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 28px;    
-}
 
 .projects.projects-grid .carousel .owl-nav .owl-next,.projects.projects-grid .carousel .owl-nav .owl-prev{
     position: relative;
-}
-
-.contact .contact-panel p{
-    color:#fff;
 }
 
 .counters{
@@ -376,7 +401,11 @@ footer .content-block.content-headquarters .footer-widget-content {
             min-height: 100px;
         }   
       }
-    } 
+    }
+    .page-title-wrap{
+        padding: 50px 0;
+        height: 100%;
+    }     
 }
 
 .about-page{
@@ -522,6 +551,21 @@ footer .content-block.content-headquarters .footer-widget-content {
             box-shadow: 0px 3px 63px 0px rgb(40 40 40 / 21%);
         }
     }
+}
+
+.support-page{
+    .about-img{
+        height: 400px;
+    }
+}
+
+.education-page{
+    &.company-data{
+      .panels-container{
+          transform: none;
+          margin: 0;
+      }  
+    } 
 }
 
 @media only screen and (max-width: 992px) {

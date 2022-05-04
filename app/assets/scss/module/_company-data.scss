@@ -135,6 +135,11 @@
                         }
                     }
                 }
+                svg{
+					use{
+						fill: var(--global--color-white);
+					}
+				}
             }
 
             .panel-content {

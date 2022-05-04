@@ -31,11 +31,11 @@ ul.list-icons {
 
     li {
         display       : flex;
-        align-items   : center;
+        align-items   : flex-start;
         font-family   : var(--global--font-body);
         font-weight   : 700;
         font-size     : 15px;
-        line-height   : 36px;
+        line-height   : 30px;
         color         : var(--global--color-body);
         text-transform: capitalize;
 
@@ -65,6 +65,7 @@ ul.list-icons {
             background-color: var(--global--color-primary);
             color           : var(--global--color-white);
             margin-right    : 15px;
+            margin-top: 4px;
             border-radius   : 50%;
             font-size       : 10px;
             flex-shrink: 0;
@@ -72,6 +73,9 @@ ul.list-icons {
             @media #{$noteBook} {
                 margin-right: 8px;
             }
+        }
+        &:not(:last-child){
+            margin-bottom: 10px;
         }
     }
 
