@@ -1182,7 +1182,9 @@ form .col-12 {
   right: 20px;
 }
 .form-control.nice-select.open .list {
-  width: 100%;
+  width: auto;
+  max-height: 200px;
+  overflow: auto;
 }
 .form-control.nice-select .current {
   text-transform: capitalize;
@@ -8553,6 +8555,7 @@ ul.dropdown-menu > li.has-dropdown > a:before {
   background-color: transparent;
   transition: 0.3s ease-in-out;
   font-size: 13px;
+  flex-shrink: 0;
 }
 
 /* Widget Filter */
@@ -14405,6 +14408,7 @@ footer .content-block.content-headquarters .footer-widget-content {
 
 .part-number-selector {
   padding-top: 50px;
+  overflow: visible;
 }
 .part-number-selector.features {
   padding: 100px 0;
@@ -14511,19 +14515,7 @@ footer .content-block.content-headquarters .footer-widget-content {
   display: flex;
   align-items: center;
   border-radius: 8px;
-  z-index: 2;
-}
-.part-number-selector-form-bottom .form-fields:after {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  content: "";
   background: var(--global--color-primary);
-  opacity: 0.2;
-  border-radius: 8px;
-  z-index: -1;
 }
 .part-number-selector-form-bottom .form-fields .form-control {
   margin: 8px;
@@ -14744,6 +14736,10 @@ footer .content-block.content-headquarters .footer-widget-content {
   max-width: 100%;
   border-radius: 10px;
   object-fit: cover;
+}
+
+.form-control[readonly] {
+  background: var(--global--color-white);
 }
 
 @media only screen and (max-width: 992px) {

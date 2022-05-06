@@ -682,6 +682,7 @@
                         background-color: transparent;
                         transition      : 0.3s ease-in-out;
                         font-size       : 13px;
+                        flex-shrink: 0;
                     }
                 }
             }

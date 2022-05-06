@@ -194,6 +194,7 @@ footer .content-block.content-headquarters .footer-widget-content {
 
 .part-number-selector{
     padding-top: 50px;
+    overflow: visible;
     &.features{
         padding: 100px 0;
         .wrap-img{
@@ -303,19 +304,7 @@ footer .content-block.content-headquarters .footer-widget-content {
         display: flex;
         align-items: center;
         border-radius: 8px;
-        z-index: 2;
-        &:after{
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom:0;
-            content:'';
-            background: var(--global--color-primary);
-            opacity: 0.2;
-            border-radius: 8px;
-            z-index: -1;
-        }
+        background: var(--global--color-primary);
         .form-control{
             margin:8px;
             &:last-child{
@@ -615,6 +604,9 @@ footer .content-block.content-headquarters .footer-widget-content {
     }
 }
 
+.form-control[readonly]{
+    background: var(--global--color-white);
+}
 @media only screen and (max-width: 992px) {
     .part-number-selector-form{
         .part-number-selector-form-grid{
