@@ -10179,8 +10179,8 @@ ul.dropdown-menu > li.has-dropdown > a:before {
 }
 .testimonial .testimonial-thumbs .testimonial-thumb .thumb-img {
   margin-right: 15px;
-  width: 63px;
-  height: 63px;
+  width: 163px;
+  height: 163px;
   flex-shrink: 0;
   padding: 5px;
   border: 2px solid transparent;
@@ -11789,8 +11789,6 @@ ul.dropdown-menu > li.has-dropdown > a:before {
 }
 .counter.counter-3 .counter-holder .counter-num {
   margin-right: 32px;
-  transform: translateY(-14px);
-  margin-top: -14px;
 }
 .counter.counter-3 .counter-holder .counter-num span {
   font-family: var(--global--font-body);
@@ -14612,6 +14610,9 @@ footer .content-block.content-headquarters .footer-widget-content {
 .about-page.about {
   padding-top: 250px;
 }
+.about-page.about .about-img {
+  height: 400px;
+}
 .about-page.contact .contact-card {
   margin-right: 30px;
 }
@@ -14620,6 +14621,7 @@ footer .content-block.content-headquarters .footer-widget-content {
 }
 .about-page.testimonial {
   padding-top: 50px;
+  padding-bottom: 50px;
 }
 .about-page .counter.counter-3 .counter-holder .counter-img .feature-icon {
   padding: 10px;
@@ -14628,6 +14630,23 @@ footer .content-block.content-headquarters .footer-widget-content {
 }
 .about-page .counter.counter-3 .counter-holder .counter-img .feature-icon svg use {
   fill: var(--global--color-white);
+}
+.about-page .our-mission-block {
+  text-align: center;
+  max-width: 300px;
+  margin: 0 auto 30px;
+}
+.about-page .our-mission-block .icon {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 20px;
+}
+.about-page .our-mission-block .icon img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 .r-d-services.processes {
@@ -14649,6 +14668,20 @@ footer .content-block.content-headquarters .footer-widget-content {
 }
 .r-d-services .content figure ul li {
   color: #fff;
+}
+.r-d-services.project-overview h5 {
+  font-size: 20px;
+  line-height: 27px;
+  font-weight: 600;
+}
+.r-d-services .project-img {
+  background: url("../images/custom/about_bg_blur.jpg");
+  padding: 100px 50px;
+  border-radius: 15px;
+}
+.r-d-services .project-img .project-animation {
+  width: 60%;
+  height: 400px;
 }
 
 .dicing-flanges-page .page-title-wrap {
@@ -14736,6 +14769,33 @@ footer .content-block.content-headquarters .footer-widget-content {
   max-width: 100%;
   border-radius: 10px;
   object-fit: cover;
+}
+.dicing-blade-samples-page .info-card {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.dicing-blade-samples-page .info-card .icon {
+  height: 80px;
+  margin-bottom: 20px;
+}
+.dicing-blade-samples-page .info-card .icon img {
+  height: 100%;
+}
+
+.products-page table {
+  margin: 20px 0;
+}
+.products-page table tr td, .products-page table tr th {
+  padding: 5px 20px;
+  border: 1px solid var(--global--color-primary);
+}
+
+.subtitile-bg {
+  display: inline-block;
+  padding: 0 5px;
+  border-radius: 3px;
+  background: var(--global--color-primary);
+  font-weight: 700;
 }
 
 .form-control[readonly] {
