@@ -582,6 +582,74 @@ footer .content-block.content-headquarters .footer-widget-content {
     }
 }
 
+.dicing-blades-page{
+    .page-title-wrap{
+        height: auto;
+        min-height: 300px;
+        padding: 100px 0 150px;
+    }
+    &.features-bar{
+        .features-holder{
+            background: none;
+            box-shadow: none;
+            .feature-panel{
+                height: 100%;
+                box-shadow: none;
+                background: var(--global--color-white);
+                border-radius: 10px;
+                .icon{
+                    margin-bottom: 7px;
+                    width: 130px;
+                    height: 130px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 50%;
+                    background-color: var(--global--color-white);
+                    color: var(--global--color-primary);
+                    position: relative;
+                    overflow: hidden;
+                    transition: 0.3s ease-in-out;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+                &:hover{
+                    .icon{
+                        transform : rotate(360deg);
+                        box-shadow: 0 0 0 3px var(--global--color-primary);
+                    }
+                }
+            }            
+        }        
+
+    }
+    &.about{
+        .about-block{
+            .block-left{
+                .text{
+                   border-left: 4px solid var(--global--color-primary); 
+                   margin-bottom: 50px;
+                   p{
+                       border:none;
+                       &:last-child{
+                           margin-bottom: 0;
+                       }
+                   }
+                }
+            }            
+        }
+    }
+    &.processes{
+        z-index: 2;
+    }
+    &.contact{
+        padding-top: 300px;
+    }
+}
+
 .contacts-page{
     &.testimonial{
         padding-top: 50px;
@@ -670,6 +738,20 @@ footer .content-block.content-headquarters .footer-widget-content {
     border-radius: 3px;
     background: var(--global--color-primary);
     font-weight: 700;
+}
+
+.error-page{
+    &.testimonial{
+        padding: 300px 0;        
+    }
+    h1{
+        font-weight: 300;
+        font-size: 80px;
+        span{
+            font-weight: 700;
+            font-size: 100px;
+        }
+    }
 }
 
 .form-control[readonly]{

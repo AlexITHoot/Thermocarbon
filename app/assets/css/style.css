@@ -14730,6 +14730,61 @@ footer .content-block.content-headquarters .footer-widget-content {
   margin-bottom: 0;
 }
 
+.dicing-blades-page .page-title-wrap {
+  height: auto;
+  min-height: 300px;
+  padding: 100px 0 150px;
+}
+.dicing-blades-page.features-bar .features-holder {
+  background: none;
+  box-shadow: none;
+}
+.dicing-blades-page.features-bar .features-holder .feature-panel {
+  height: 100%;
+  box-shadow: none;
+  background: var(--global--color-white);
+  border-radius: 10px;
+}
+.dicing-blades-page.features-bar .features-holder .feature-panel .icon {
+  margin-bottom: 7px;
+  width: 130px;
+  height: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: var(--global--color-white);
+  color: var(--global--color-primary);
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s ease-in-out;
+}
+.dicing-blades-page.features-bar .features-holder .feature-panel .icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.dicing-blades-page.features-bar .features-holder .feature-panel:hover .icon {
+  transform: rotate(360deg);
+  box-shadow: 0 0 0 3px var(--global--color-primary);
+}
+.dicing-blades-page.about .about-block .block-left .text {
+  border-left: 4px solid var(--global--color-primary);
+  margin-bottom: 50px;
+}
+.dicing-blades-page.about .about-block .block-left .text p {
+  border: none;
+}
+.dicing-blades-page.about .about-block .block-left .text p:last-child {
+  margin-bottom: 0;
+}
+.dicing-blades-page.processes {
+  z-index: 2;
+}
+.dicing-blades-page.contact {
+  padding-top: 300px;
+}
+
 .contacts-page.testimonial {
   padding-top: 50px;
 }
@@ -14796,6 +14851,18 @@ footer .content-block.content-headquarters .footer-widget-content {
   border-radius: 3px;
   background: var(--global--color-primary);
   font-weight: 700;
+}
+
+.error-page.testimonial {
+  padding: 300px 0;
+}
+.error-page h1 {
+  font-weight: 300;
+  font-size: 80px;
+}
+.error-page h1 span {
+  font-weight: 700;
+  font-size: 100px;
 }
 
 .form-control[readonly] {
